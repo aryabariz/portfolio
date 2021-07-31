@@ -1,11 +1,10 @@
 import HeaderHome from '../c-organism/header-home';
-import MenuHome from '../c-organism/menu-home';
 
-export default function HomeLayout() {
+export default function HomeLayoutMobile() {
   return (
     <>
       <HeaderHome id="header-home" title="A R B R Z W" />
-      <MenuHome id="menu-home" className="ml-16 mt-8" />
+      <h1 className="text-white text-2xl text-center mt-10">THIS IS MOBILE VERSION</h1>
     </>
   );
 }

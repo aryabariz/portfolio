@@ -1,10 +1,9 @@
 import React from 'react';
-import HomeLayout from '../components/d-layouts/home-layout';
+import HomeLayoutDesktop from '../components/d-layouts/home-layout-desktop';
+import HomeLayoutMobile from '../components/d-layouts/home-layout-mobile';
+import { isMobile } from '../helper/common-helper';
 
 export default function Home() {
-  return (
-    <>
-      <HomeLayout />
-    </>
-  );
+  if (isMobile()) return <HomeLayoutMobile />;
+  return <HomeLayoutDesktop />;
 }
